@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<style type="text/css">
+.input1{ BACKGROUND-COLOR:#000000; BORDER-BOTTOM:#000000 0px solid; 
+BORDER-LEFT:#000000 0px solid; 
+BORDER-RIGHT: #000000 0px solid; 
+BORDER-TOP: #000000 0px solid; COLOR: rgb(9,9,9); FONT-SIZE: 6
+}
+</style>
+
+<meta name="theme-color" content="#2D79B2" />
+<title>考试时钟--中山大学南方学院医管系</TITLE> 
+<script language=javaScript>
+<!--// 
+function Fkey(){
+     var WsShell = new ActiveXObject('WScript.Shell')
+     WsShell.SendKeys('{F11}');
+}
+
+function clockon() {
+thistime= new Date()
+var hours=thistime.getHours()
+var minutes=thistime.getMinutes()
+var seconds=thistime.getSeconds()
+if (eval(hours) <10) {hours="0"+hours}
+if (eval(minutes) < 10) {minutes="0"+minutes}
+if (seconds < 10) {seconds="0"+seconds}
+thistime = hours+":"+minutes+":"+seconds
+bgclocknoshade.innerHTML=thistime
+bgclockshade.innerHTML=thistime
+/*
+if(document.layers) {
+document.bgclockshade.docuement.write('<div id="bgclockshade" style="position:absolute;visibility:visible;font-family:Verdana;color:FFAAAAA;font-size:80px;top:10px;left:150px">'+thistime+'</div>')
+document.bgclocknoshade.document.write('<div id="bgclocknoshade" style="position:absolute;visibility:visible;font-family:Verdana;color:DDDDDD;font-size:80px;top:10px;left:150px">'+thistime+'</div>')
+document.close()
+}
+*/
+var timer=setTimeout("clockon()",200)
+}
+//-->
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body bgcolor="#000000" text="#99FF00" onLoad="clockon()">
+<div id="bgclockshade" style="position:absolute;visibility:visible;font-family:Arial;color:FF8888;font-size:150px;top:10px;left:350px"></div>
+<div id="bgclocknoshade" style="position:absolute;visibility:visible;font-family:Arial;color:99FF00;font-size:150px;top:10px;left:350px"></div>
+<div id="mainbody" style="position:absolute; visibility:visible; left:50px; top:153px; width:1200px; height:459px">
+</body>
+<table width="91%">
+
+	<tr>
+		<td width="94%">
+		<p align="center">　
+		<font face="黑体" color="#FFFFFF" size="7">学以载道     诚信为本 </font><tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">考试时间：
+<input type="text" value="9:00--11:00" class=input1 name="b1" id="b1" size="15" style="color: #FFFFFF; font-family: 黑体; font-size: 28pt">&nbsp;&nbsp;&nbsp;
+</font>
+</td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">考试科目：<input type="text" value="请输入考试科目" class=input1 name="b3" id="b3" size="28" style="color: #FFFFFF; font-family: 黑体; font-size: 28pt"></font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">任课教师：<input type="text" value="请输入任课教师姓名" class=input1 name="b5" id="b5" size="28" style="color: #FFFFFF; font-family: 黑体; font-size: 28pt"></font></td>
+</tr>
+<tr>
+  <td width="100%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">1、考试双隔位就座，与考试无关的物品统一放置于讲台前，将学生证放于<br>&nbsp;&nbsp;&nbsp;&nbsp;桌面待查。</font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">2、评教卡上用黑色签字笔填写“课程名称”和“教师姓名”，用2B铅笔规<br>&nbsp;&nbsp;&nbsp;&nbsp;范填涂评教指标选项，评教要公正、客观。</font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">3、考前请上洗手间，考试中途不得离场，特殊情况需报备。</font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">4、考中禁止使用手机等通讯设备以及考试规定以外的任何资料。</font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">5、开考30分钟后方可交卷。</font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">6、务必在答题纸上填写姓名、专业班级、学号，并在左上角写上序号。</font></td>
+</tr>
+<tr>
+  <td width="94%" height="60">　
+<font face="黑体" size="6" color="#FFFFFF">7、一经发现作弊，立即终止考试且该门课程成绩记0分。</font></td>
+</tr>
+  <tr>
+  <td width="94%" height="60">
+	<p align="right">屏幕分辨率在1024×768 以上。<font size="4" face="黑体" color="#00FF00">按“F11”全屏</font></tr>
+</table>
+</html>
+ 
